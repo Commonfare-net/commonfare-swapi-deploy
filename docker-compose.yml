@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  swapi: 
+    image: commonfare/social-wallet-api
+    volumes:
+     - ./data/social-wallet-api.yaml:/usr/src/app/resources/social-wallet-api.yaml
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    # network_mode: "host" # required if social wallet api service listens only to 'localhost'
+
+  db:
+    image: mongo
+    volumes:
+      - ./data/db:/data/db
+    # ports:
+      # - "27017:27017" # required if social wallet api service listens only to 'localhost'
+

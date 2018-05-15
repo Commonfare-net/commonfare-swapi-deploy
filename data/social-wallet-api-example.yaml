@@ -1,0 +1,27 @@
+# ===============================================================
+# Example of the configuration file for Social Wallet API service
+# ===============================================================
+#
+# You will need to copy it to social-wallet-api.yaml and tweak
+# the configuration according to your specific needs.
+# 
+# For further details and documentation please refer to:
+# https://github.com/Commonfare-net/social-wallet-api
+#
+# ===============================================================
+
+log-level: debug
+
+freecoin:
+  mongo:
+    host: localhost
+    port: 27017
+    db:   freecoin
+  faircoin:
+    currency: fair
+    number-confirmations: 6
+    frequency-confirmations-millis: 20000
+    rpc-config-path: /tmp/faircoin.conf
+    deposit-expiration-millis: 3600000
+    frequency-deposit-millis: 60000
+
