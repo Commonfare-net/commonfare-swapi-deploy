@@ -5,9 +5,12 @@ and its storage.
 For more information please refer to https://github.com/Commonfare-net/social-wallet-api
 
 ## Configuration
-Before running this service you should create your onwn configuration file located at
+Before running this service you should create your own configuration file located at
 `data/social-wallet-api.yaml`.  
 An example configuration file is provided at `data/social-wallet-api-example.yaml`.
+
+### Additional settings
+The `host` and `port` on which the Social Wallet API will be running can be specified by using the respectively `SWAPI_HOST` and `SWAPI_PORT` environment variables respectively.
 
 ## Running
 To run this service just use:  
