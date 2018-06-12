@@ -19,3 +19,7 @@ docker-compose up -d
 ```
 
 At this point you shall be able to access the Swagger UI at http://localhost:3000.
+
+## Dependency management
+To overcome a problem with the docker image `commonfare/social-wallet-api` which causes all dependencies to be downloaded every time the image is run
+we store them in the host and use them as a volume in the docker-compose configuration. By default dependencies will be stored in `data/swapi/m2`.

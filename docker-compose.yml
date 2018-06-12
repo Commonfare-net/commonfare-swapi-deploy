@@ -6,6 +6,7 @@ services:
     image: commonfare/social-wallet-api
     volumes:
      - ./data/social-wallet-api.yaml:/usr/src/app/resources/social-wallet-api.yaml
+     - ./data/swapi/m2:/root/.m2
     ports:
       - "3000:3000" # if you specify the env variable SWAPI_PORT make sure it matches the container port here
     environment:
