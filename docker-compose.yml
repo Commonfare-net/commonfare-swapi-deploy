@@ -8,6 +8,8 @@ services:
      - ./data/social-wallet-api.yaml:/usr/src/app/resources/social-wallet-api.yaml
     ports:
       - "3000:3000"
+    environment:
+      - SWAPI_HOST=0.0.0.0 # hostname on which the social wallet api service will listen
     depends_on:
       - db
     # network_mode: "host" # required if social wallet api service listens only to 'localhost'
