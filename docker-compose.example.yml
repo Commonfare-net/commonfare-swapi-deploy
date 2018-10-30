@@ -8,7 +8,7 @@ services:
      - ./data/social-wallet-api.yaml:/usr/src/app/resources/social-wallet-api.yaml
      - ./data/swapi/m2:/root/.m2
     ports:
-      - "3001:3000" # if you specify the env variable SWAPI_PORT make sure it matches the container port here
+      - "3000:3000" # if you specify the env variable SWAPI_PORT make sure it matches the container port here
     environment:
       - SWAPI_HOST=0.0.0.0 # hostname on which the social wallet api service will listen
       #- SWAPI_PORT=4000 # port on which the social wallet api service will listen (default is 3000)

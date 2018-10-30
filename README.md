@@ -4,7 +4,14 @@ and its storage.
 
 For more information please refer to https://github.com/Commonfare-net/social-wallet-api
 
+
+
 ## Configuration
+
+### Docker compose
+Copy `docker-compose.example.yml` to `docker-compose.yml` and change your settings if needed (e.g. port number).
+
+### SWAPI
 Before running this service you should create your own configuration file located at
 `data/social-wallet-api.yaml`.  
 An example configuration file is provided at `data/social-wallet-api-example.yaml`.
