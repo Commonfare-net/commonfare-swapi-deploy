@@ -2,7 +2,7 @@
 # Example of the configuration file for Social Wallet API service
 # ===============================================================
 #
-# You will need to copy it to data/social-wallet-api.yaml and tweak
+# You will need to copy it to conf/social-wallet-api.yaml and tweak
 # the configuration according to your specific needs.
 #
 # For further details and documentation please refer to:
@@ -25,4 +25,4 @@ freecoin:
     rpc-config-path: /tmp/faircoin.conf
     deposit-expiration-millis: 3600000
     frequency-deposit-millis: 60000
-  apikey: YOUR_SWAPI_ID # CHANGE THIS! It MUST match the one in apikey.yaml
+  apikey: YOUR_SWAPI_ID # CHANGE THIS! It will match the one in apikey.yaml
