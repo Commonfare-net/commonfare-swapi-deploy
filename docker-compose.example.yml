@@ -1,12 +1,14 @@
+# Copy this file to docker-compose.yml and change it before running docker the first time
+
 version: "3"
 
 services:
 
   swapi:
-    image: commonfare/social-wallet-api
+    image: dyne/social-wallet-api
     volumes:
-     - ./data/social-wallet-api.yaml:/usr/src/app/resources/social-wallet-api.yaml
-     - ./data/swapi/m2:/root/.m2
+     - ./conf/social-wallet-api.yaml:/app/resources/social-wallet-api.yaml
+     - ./conf/apikey.yaml:/app/apikey.yaml
     ports:
       - "3000:3000" # if you specify the env variable SWAPI_PORT make sure it matches the container port here
     environment:

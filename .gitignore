@@ -1,2 +1,4 @@
 /data/
 docker-compose.yml
+social-wallet-api.yaml
+apikey.yaml
